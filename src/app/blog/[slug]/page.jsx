@@ -10,7 +10,8 @@ export async function generateStaticParams() {
 
 // Generate metadata for each blog post
 export async function generateMetadata({ params }) {
-  const blog = blogs.find(b => b.slug === params.slug);
+  const { slug } = await params;
+  const blog = blogs.find(b => b.slug === slug);
   if (!blog) {
     return { title: 'Article Not Found | Huzi Style' };
   }
@@ -30,6 +31,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function BlogPostPage({ params }) {
-  return <BlogPostClient slug={params.slug} />;
+export default async function BlogPostPage({ params }) {
+  const { slug } = await params;
+  return <BlogPostClient slug={slug} />;
 }
