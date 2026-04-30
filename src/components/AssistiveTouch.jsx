@@ -1,12 +1,14 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { X } from 'lucide-react';
 import { useCart } from '../context/CartContext';
-import { motion, AnimatePresence, useMotionValue, animate } from 'framer-motion';
+import { motion, AnimatePresence, useMotionValue } from 'framer-motion';
 import './AssistiveTouch.css';
+
+const DRAG_THRESHOLD = 10; // Minimum px movement to count as a drag vs a tap
 
 const AssistiveTouch = () => {
     const pathname = usePathname();
@@ -19,9 +21,9 @@ const AssistiveTouch = () => {
     const [menuOrigin, setMenuOrigin] = useState({ x: 0, y: 0 });
 
     const idleTimer = useRef(null);
-    const isDragging = useRef(false);
+    const pointerStartRef = useRef({ x: 0, y: 0 });
+    const hasDragged = useRef(false);
     const ballRef = useRef(null);
-    // Persist position state using motion values for smoothness
     const x = useMotionValue(0);
     const y = useMotionValue(0);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -73,7 +75,6 @@ const AssistiveTouch = () => {
         }
     };
 
-    // Tight radius — compact menu
     const getRadius = (w) => {
         if (w < 480) return 95;
         if (w < 768) return 115;
@@ -110,31 +111,48 @@ const AssistiveTouch = () => {
         };
     };
 
-    const getBallCenter = () => {
-        if (ballRef.current) {
-            const rect = ballRef.current.getBoundingClientRect();
-            return {
-                x: rect.left + rect.width / 2,
-                y: rect.top + rect.height / 2,
-            };
-        }
-        return {
-            x: windowSize.width - 40,
-            y: windowSize.height - 50,
-        };
+    const openMenu = useCallback(() => {
+        setMenuOrigin({
+            x: windowSize.width / 2,
+            y: windowSize.height / 2
+        });
+        setIsOpen(true);
+        resetIdleTimer();
+    }, [windowSize.width, windowSize.height]);
+
+    // Track pointer down position
+    const handlePointerDown = (e) => {
+        pointerStartRef.current = { x: e.clientX, y: e.clientY };
+        hasDragged.current = false;
     };
 
-    const handleBallClick = () => {
-        if (!isDragging.current) {
-            // Open in center of screen
-            setMenuOrigin({
-                x: windowSize.width / 2,
-                y: windowSize.height / 2
-            });
-            setIsOpen(true);
-            resetIdleTimer();
+    // On drag start, mark that dragging began
+    const handleDragStart = () => {
+        resetIdleTimer();
+    };
+
+    // On drag, check if movement exceeds threshold
+    const handleDrag = (_event, info) => {
+        const dx = Math.abs(info.point.x - pointerStartRef.current.x);
+        const dy = Math.abs(info.point.y - pointerStartRef.current.y);
+        if (dx > DRAG_THRESHOLD || dy > DRAG_THRESHOLD) {
+            hasDragged.current = true;
         }
-        isDragging.current = false;
+    };
+
+    // On drag end, save position
+    const handleDragEnd = () => {
+        resetIdleTimer();
+        savePosition();
+    };
+
+    // onClick fires after pointerUp — use it for tap detection
+    // This works reliably on both desktop and mobile
+    const handleClick = () => {
+        if (!hasDragged.current) {
+            openMenu();
+        }
+        hasDragged.current = false;
     };
 
     if (!isClient || !isLoaded) return null;
@@ -171,7 +189,7 @@ const AssistiveTouch = () => {
                                 <X size={18} color="white" strokeWidth={2.5} />
                             </motion.button>
 
-                            {/* Pill Items — fast stagger */}
+                            {/* Pill Items */}
                             {menuItems.map((item, index) => {
                                 const pos = getItemPosition(index);
                                 return (
@@ -209,29 +227,19 @@ const AssistiveTouch = () => {
                     drag
                     dragMomentum={true}
                     dragElastic={0.2}
-                    onDragEnd={() => {
-                        resetIdleTimer();
-                        savePosition();
-                    }}
-                    onPointerUp={(e) => {
-                        // Differentiate click from drag
-                        if (!isDragging.current) handleBallClick();
-                        isDragging.current = false;
-                    }}
-                    onDragStart={() => { isDragging.current = true; resetIdleTimer(); }}
+                    onPointerDown={handlePointerDown}
+                    onDragStart={handleDragStart}
+                    onDrag={handleDrag}
+                    onDragEnd={handleDragEnd}
+                    onClick={handleClick}
                     dragConstraints={{
-                        left: -windowSize.width + 48 + 10, // Width - Ball - Padding
-                        right: 0, // Anchored Right
-                        top: -(windowSize.height - (windowSize.width <= 1024 ? 100 : 30) - 48 - 20), // Height - Bottom - Ball - Padding
-                        bottom: 0, // Anchored Bottom
+                        left: -windowSize.width + 48 + 10,
+                        right: 0,
+                        top: -(windowSize.height - (windowSize.width <= 1024 ? 100 : 30) - 48 - 20),
+                        bottom: 0,
                     }}
                     dragTransition={{ bounceStiffness: 300, bounceDamping: 20 }}
-                    onLayoutAnimationComplete={() => {
-                        // Ensure we save if it settles
-                        savePosition();
-                    }}
                     whileHover={{ scale: 1.1, boxShadow: "0 0 25px rgba(255, 255, 255, 0.6)" }}
-                    whileTap={{ scale: 0.95 }}
                     className="assistive-ball"
                     style={{
                         x, y,
@@ -242,6 +250,9 @@ const AssistiveTouch = () => {
                         cursor: 'grab',
                         touchAction: 'none',
                         opacity: isIdle ? 0.5 : 1,
+                        WebkitTapHighlightColor: 'transparent',
+                        userSelect: 'none',
+                        WebkitUserSelect: 'none',
                     }}
                 >
                     <div className="assistive-ball-icon">
