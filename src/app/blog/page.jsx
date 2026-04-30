@@ -33,8 +33,8 @@ export default function BlogPage() {
   const remainingBlogs = filteredBlogs.slice(1);
 
   const formatDate = (dateStr) => {
-    const date = new Date(dateStr);
-    return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    const date = new Date(dateStr + 'T00:00:00Z');
+    return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
   };
 
   const handleClearSearch = () => {
