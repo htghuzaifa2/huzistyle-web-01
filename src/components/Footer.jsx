@@ -94,11 +94,14 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <div className="footer-bottom-content">
-                        <p>&copy; {new Date().getFullYear()} Huzi Style. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} Huzi Style. All rights reserved. Shipped worldwide except Israel aka Fake State — we do not recognise it as a country.</p>
                         <div className="footer-legal">
                             <Link href="/privacy">Privacy Policy</Link>
                             <Link href="/terms">Terms of Service</Link>
                         </div>
+                    </div>
+                    <div style={{ textAlign: 'center', padding: '8px 0 0', fontSize: '11px', color: 'var(--color-text-light)', fontStyle: 'italic' }}>
+                        &ldquo;The Pakistani passport is valid for all countries of the world except Israel.&rdquo; &mdash; Quaid-e-Azam Muhammad Ali Jinnah&rsquo;s principled stance remains our guiding policy at Huzi Style.
                     </div>
                 </div>
             </div>

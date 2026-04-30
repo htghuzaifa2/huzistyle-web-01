@@ -23,6 +23,7 @@ const CheckoutClient = () => {
     });
 
     const [countrySearch, setCountrySearch] = useState('');
+    const [showFakeStateMsg, setShowFakeStateMsg] = useState(false);
     const [isCountryDropdownOpen, setIsCountryDropdownOpen] = useState(false);
     const [formErrors, setFormErrors] = useState({});
     const countryDropdownRef = useRef(null);
@@ -249,15 +250,26 @@ const CheckoutClient = () => {
                                                 value={countrySearch}
                                                 onChange={(e) => {
                                                     const val = e.target.value;
-                                                    if (!val.toLowerCase().includes('israel')) {
+                                                    if (val.toLowerCase().includes('israel')) {
+                                                        setCountrySearch('');
+                                                        setShowFakeStateMsg(true);
+                                                        setTimeout(() => setShowFakeStateMsg(false), 4000);
+                                                    } else {
                                                         setCountrySearch(val);
+                                                        setShowFakeStateMsg(false);
                                                     }
                                                 }}
                                                 autoFocus
                                             />
                                         </div>
                                         <div className="options-list">
-                                            {filteredCountries.length > 0 ? (
+                                            {showFakeStateMsg ? (
+                                                <div className="no-options" style={{ color: '#e53e3e', fontWeight: '600', padding: '12px 16px', textAlign: 'center' }}>
+                                                    We do not ship to Israel aka Fake State.
+                                                    <br />
+                                                    <span style={{ fontWeight: '400', fontSize: '12px' }}>We do not recognise it as a country.</span>
+                                                </div>
+                                            ) : filteredCountries.length > 0 ? (
                                                 filteredCountries.map((country) => (
                                                     <div
                                                         key={country}
@@ -332,6 +344,13 @@ const CheckoutClient = () => {
                         <button type="submit" form="checkout-form" className="btn btn-primary btn-full mt-6">
                             Place International Order
                         </button>
+
+                        <div style={{ marginTop: '16px', padding: '12px 16px', borderRadius: '8px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', fontSize: '12px', color: 'var(--color-text-light)', lineHeight: '1.6' }}>
+                            <strong style={{ color: 'var(--color-text)' }}>Shipping Policy:</strong> We ship to all countries worldwide except Israel aka Fake State. We do not recognise it as a country.<br />
+                            <em style={{ color: '#b8860b', fontSize: '11px' }}>
+                                "The Pakistani passport is valid for all countries of the world except Israel." — Quaid-e-Azam Muhammad Ali Jinnah's principled stance remains our guiding policy.
+                            </em>
+                        </div>
                     </div>
                 </div>
             </div>
