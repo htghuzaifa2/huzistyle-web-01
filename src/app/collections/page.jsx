@@ -28,6 +28,7 @@ export default function CollectionsPage() {
         { name: 'Men', image: 'https://i.postimg.cc/Vvr0tpD7/men.webp', link: '/shop/men' },
         { name: 'Women', image: 'https://i.postimg.cc/pXKgvZHk/women-Kimi.jpg', link: '/shop/women' },
         { name: 'Kids', image: 'https://i.postimg.cc/Gtgny3XN/kids-Kimi.jpg', link: '/shop/kids' },
+        { name: 'Couple', image: '/couple-category.webp', link: '/shop/couple' },
         { name: 'Gaming Outfits', image: 'https://i.postimg.cc/m27GrVTG/clair-obscur-expedition-33.avif', link: '/shop/gaming-outfits' },
         { name: 'Hoodies', image: 'https://i.postimg.cc/tJfM9bRM/Hoodie-kimi.jpg', link: '/shop/hoodies' },
         { name: 'Jackets', image: 'https://i.postimg.cc/zfvPmT53/jackets-Kimi.webp', link: '/shop/jackets' },

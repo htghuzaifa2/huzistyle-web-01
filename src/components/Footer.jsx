@@ -48,6 +48,8 @@ const Footer = () => {
                             <li><Link href="/shop?sort=newest">New Arrivals</Link></li>
                             <li><Link href="/shop?category=Men">Men</Link></li>
                             <li><Link href="/shop?category=Women">Women</Link></li>
+                            <li><Link href="/shop?category=Kids">Kids</Link></li>
+                            <li><Link href="/shop?category=Couple">Couple</Link></li>
                             <li><Link href="/collections">Collections</Link></li>
                             <li><Link href="/lookbook">Lookbook</Link></li>
                         </ul>

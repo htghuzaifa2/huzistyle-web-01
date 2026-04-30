@@ -38,7 +38,7 @@ const ShopClient = ({ categoryParam, subCategoryParam, initialProducts = [] }) =
     const containerRef = useRef(null);
 
     // Unified Categories List
-    const categories = useMemo(() => ['All', 'Men', 'Women', 'Kids', 'Gaming Outfits', 'Hoodie', 'Jacket', 'Ghost of Yotei'], []);
+    const categories = useMemo(() => ['All', 'Men', 'Women', 'Kids', 'Couple', 'Gaming Outfits', 'Hoodie', 'Jacket', 'Ghost of Yotei'], []);
 
     // Filter & Sort Logic
     const filteredProducts = useMemo(() => {

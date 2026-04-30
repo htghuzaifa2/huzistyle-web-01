@@ -1,7 +1,7 @@
 // Product Data
 // Do not remove the exports below, as they are used by the application components.
 
-export const categories = ['Men', 'Women', 'Kids', 'Gaming Outfits', 'Ghost of Yotei'];
+export const categories = ['Men', 'Women', 'Kids', 'Couple', 'Gaming Outfits', 'Ghost of Yotei'];
 
 export const gamingSubCategories = [
     'Ghost of Tsushima',
@@ -46,13 +46,13 @@ export const products = rawProducts.map(p => {
     );
     if (typeMatch) productType = typeMatch;
 
-    // 3. Determine secondary categories (Unisex / Gaming products appear in Men + Women + Kids)
+    // 3. Determine secondary categories (Unisex / Gaming products appear in Men + Women + Kids + Couple)
     let secondaryCategories = [];
     if (category === 'Gaming Outfits' || p.categories.some(c => normalize(c) === 'unisex')) {
-        secondaryCategories = ['Men', 'Women', 'Kids'];
+        secondaryCategories = ['Men', 'Women', 'Kids', 'Couple'];
     } else if (category !== 'Kids') {
-        // Non-gaming products also available in Kids via custom sizing
-        secondaryCategories = ['Kids'];
+        // Non-gaming products also available in Kids + Couple via custom sizing
+        secondaryCategories = ['Kids', 'Couple'];
     }
 
     // 4. Map Fields
