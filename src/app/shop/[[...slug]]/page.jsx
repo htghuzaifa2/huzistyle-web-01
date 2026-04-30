@@ -106,8 +106,9 @@ export default async function ShopPage({ params }) {
 
         const productCategory = product.category ? formatSlug(product.category) : '';
         const productCategories = product.categories ? product.categories.map(c => formatSlug(c)) : [];
+        const productSecondaryCategories = product.secondaryCategories ? product.secondaryCategories.map(c => formatSlug(c)) : [];
 
-        const categoryMatches = productCategory === category || productCategories.includes(category);
+        const categoryMatches = productCategory === category || productCategories.includes(category) || productSecondaryCategories.includes(category);
 
         if (!categoryMatches) return false;
         if (!subCategory) return true;

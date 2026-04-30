@@ -46,7 +46,13 @@ export const products = rawProducts.map(p => {
     );
     if (typeMatch) productType = typeMatch;
 
-    // 3. Map Fields
+    // 3. Determine secondary categories (Unisex products appear in Men + Women)
+    let secondaryCategories = [];
+    if (category === 'Gaming Outfits' || p.categories.some(c => normalize(c) === 'unisex')) {
+        secondaryCategories = ['Men', 'Women'];
+    }
+
+    // 4. Map Fields
     return {
         id: p.id,
         slug: p.slug,
@@ -54,6 +60,7 @@ export const products = rawProducts.map(p => {
         price: p.price,
         category: category,
         subCategory: subCategory,
+        secondaryCategories: secondaryCategories,
         productType: productType,
         image: p.images[0]?.url || '',
         images: p.images.map(img => img.url),

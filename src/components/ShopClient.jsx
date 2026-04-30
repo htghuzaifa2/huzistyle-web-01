@@ -53,7 +53,10 @@ const ShopClient = ({ categoryParam, subCategoryParam, initialProducts = [] }) =
             result = result.filter(p => p.productType === activeCategory);
         } else if (activeCategory !== 'All') {
             // Normal Category Filter (Men, Women, Kids)
-            result = result.filter(p => p.category === activeCategory);
+            result = result.filter(p =>
+                p.category === activeCategory ||
+                (p.secondaryCategories && p.secondaryCategories.includes(activeCategory))
+            );
         }
 
         // Sort
