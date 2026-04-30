@@ -8,6 +8,7 @@ import '../styles/Checkout.css';
 import '../styles/SearchResults.css';
 import '../styles/ContentPage.css';
 import '../styles/Account.css';
+import '../styles/Blog.css';
 import Providers from '../components/Providers';
 import Layout from '../layouts/Layout';
 import AssistiveTouch from '../components/AssistiveTouch';

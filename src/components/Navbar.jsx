@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ShoppingBag, Search, Menu, X, Sun, Moon, Monitor, Zap, Home, Heart, ShoppingCart, Grid, Globe, MessageCircle } from 'lucide-react';
+import { ShoppingBag, Search, Menu, X, Sun, Moon, Monitor, Zap, Home, Heart, ShoppingCart, Grid, Globe, MessageCircle, BookOpen } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useTheme } from '../context/ThemeContext';
 import SearchModal from './Search';
@@ -44,7 +44,7 @@ const Navbar = () => {
         setIsMobileMenuOpen(false);
     }, [pathname]);
 
-    const isActive = (path) => pathname === path;
+    const isActive = (path) => pathname === path || (path !== '/' && pathname.startsWith(path + '/'));
 
     return (
         <>
@@ -63,6 +63,7 @@ const Navbar = () => {
                     <nav className="nav-links desktop-nav">
                         <Link href="/shop" className={`nav-link ${isActive('/shop') ? 'active' : ''}`}>Shop</Link>
                         <Link href="/collections" className={`nav-link ${isActive('/collections') ? 'active' : ''}`}>Collections</Link>
+                        <Link href="/blog" className={`nav-link ${isActive('/blog') ? 'active' : ''}`}>Blog</Link>
                         <Link href="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About</Link>
                         <Link href="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
                     </nav>
@@ -138,6 +139,9 @@ const Navbar = () => {
                         </Link>
                         <Link href="/contact" className={isActive('/contact') ? 'active' : ''}>
                             <MessageCircle size={20} /> Contact
+                        </Link>
+                        <Link href="/blog" className={isActive('/blog') ? 'active' : ''}>
+                            <BookOpen size={20} /> Blog
                         </Link>
                         <div className="sidebar-divider"></div>
                         <Link href="/faq">FAQ</Link>

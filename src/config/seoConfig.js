@@ -98,5 +98,12 @@ export const seoConfig = {
         keywords: "search products, find clothing, search Huzi Style, product search",
         canonicalUrl: "/search",
         ogImage: "/og-search.jpg"
+    },
+    blog: {
+        title: "Blog - Huzi Style",
+        description: "Style guides, fashion trends, and behind-the-scenes stories from Huzi Style. Stay updated with the latest in premium streetwear.",
+        keywords: "Huzi Style blog, streetwear guide, fashion tips, style trends, Pakistan fashion",
+        canonicalUrl: "/blog",
+        ogImage: "/favicon.ico"
     }
 };
