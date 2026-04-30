@@ -1,13 +1,24 @@
 'use client';
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Clock, Calendar, ArrowRight } from 'lucide-react';
 import { blogs, getBlogBySlug, getRelatedBlogs } from '../../../data/blogs';
+import { products } from '../../../data/products';
 import '../../../styles/Blog.css';
 
 export default function BlogPostClient({ slug }) {
   const blog = getBlogBySlug(slug);
+
+  const randomProducts = useMemo(() => {
+    const seed = slug.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    const shuffled = [...products].sort((a, b) => {
+      const hashA = (seed * 31 + a.id * 17) % 1000;
+      const hashB = (seed * 31 + b.id * 17) % 1000;
+      return hashA - hashB;
+    });
+    return shuffled.slice(0, 12);
+  }, [slug]);
 
   if (!blog) {
     return (
@@ -23,7 +34,7 @@ export default function BlogPostClient({ slug }) {
     );
   }
 
-  const relatedBlogs = getRelatedBlogs(slug, 3);
+  const relatedBlogs = getRelatedBlogs(slug, 6);
 
   const formatDate = (dateStr) => {
     const date = new Date(dateStr + 'T00:00:00Z');
@@ -37,6 +48,22 @@ export default function BlogPostClient({ slug }) {
       }
       if (block.type === 'heading') {
         return <h2 key={index}>{block.text}</h2>;
+      }
+      if (block.type === 'buy_now') {
+        return (
+          <div key={index} className="blog-buy-now-cta">
+            <div className="blog-buy-now-card">
+              <img src={block.productImage} alt={block.productName} className="blog-buy-now-image" />
+              <div className="blog-buy-now-info">
+                <h3>{block.productName}</h3>
+                <p className="blog-buy-now-price">${block.productPrice} USD</p>
+                <Link href={`/product/${block.productSlug}`} className="blog-buy-now-btn">
+                  Buy Now <ArrowRight size={16} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        );
       }
       return null;
     });
@@ -112,6 +139,25 @@ export default function BlogPostClient({ slug }) {
           </div>
         </div>
       )}
+
+      {/* Explore Our Collection */}
+      <div className="blog-products-section">
+        <h2 className="blog-products-title">Explore Our Collection</h2>
+        <div className="blog-products-grid">
+          {randomProducts.map(product => (
+            <Link key={product.id} href={`/product/${product.slug}`} className="blog-product-card">
+              <div className="blog-product-card-image">
+                <img src={product.image} alt={product.name} loading="lazy" />
+              </div>
+              <div className="blog-product-card-body">
+                <h4 className="blog-product-card-name">{product.name}</h4>
+                <p className="blog-product-card-price">${product.price} USD</p>
+                <span className="blog-product-card-link">View Product <ArrowRight size={14} /></span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
