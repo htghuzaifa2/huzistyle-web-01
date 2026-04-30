@@ -1,0 +1,704 @@
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/11211aaabb2560be.js
+  1:681    warning  'r' is defined but never used  no-unused-vars
+  1:911    warning  'e' is defined but never used  no-unused-vars
+  1:977    warning  'e' is defined but never used  no-unused-vars
+  1:1126   warning  'r' is defined but never used  no-unused-vars
+  1:1163   warning  'r' is defined but never used  no-unused-vars
+  1:1537   warning  't' is defined but never used  no-unused-vars
+  1:1572   warning  't' is defined but never used  no-unused-vars
+  1:2125   warning  'e' is defined but never used  no-unused-vars
+  1:2157   warning  'e' is defined but never used  no-unused-vars
+  1:2254   warning  'e' is defined but never used  no-unused-vars
+  1:2577   warning  'r' is defined but never used  no-unused-vars
+  1:3087   warning  'r' is defined but never used  no-unused-vars
+  1:10827  warning  'r' is defined but never used  no-unused-vars
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/112f346e31f991df.js
+  1:7735   error  Expected a 'break' statement before 'case'    no-fallthrough
+  1:8005   error  Expected a 'break' statement before 'case'    no-fallthrough
+  1:8972   error  Expected a 'break' statement before 'case'    no-fallthrough
+  1:9485   error  'n' is a function                             no-func-assign
+  1:25838  error  Unexpected lexical declaration in case block  no-case-declarations
+  2:275    error  Unexpected lexical declaration in case block  no-case-declarations
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/1b5a428d391c3322.js
+  1:412  error  'r' is already defined  no-redeclare
+  1:429  error  'c' is already defined  no-redeclare
+  1:446  error  'd' is already defined  no-redeclare
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/247eb132b7f7b574.js
+  1:5867   error    Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  1:6650   error    Expected a conditional expression and instead saw an assignment            no-cond-assign
+  1:7064   warning  'h' is defined but never used                                              no-unused-vars
+  1:11839  warning  'r' is defined but never used                                              no-unused-vars
+  1:12395  error    'a' is a function                                                          no-func-assign
+  1:12555  warning  'e' is defined but never used                                              no-unused-vars
+  1:17979  error    Unexpected lexical declaration in case block                               no-case-declarations
+  1:18008  error    Unexpected lexical declaration in case block                               no-case-declarations
+  1:18562  error    Unexpected lexical declaration in case block                               no-case-declarations
+  1:18591  error    Unexpected lexical declaration in case block                               no-case-declarations
+  1:19107  warning  't' is defined but never used                                              no-unused-vars
+  1:23029  error    Unexpected lexical declaration in case block                               no-case-declarations
+  1:24018  error    Expected to return a value in method 'get'                                 getter-return
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/3236e71e7572b651.js
+  1:3473    warning  'e' is defined but never used                                                      no-unused-vars
+  1:3475    error    Empty block statement                                                              no-empty
+  1:4957    error    Unnecessary escape character: \/                                                   no-useless-escape
+  1:65858   warning  'e' is defined but never used                                                      no-unused-vars
+  1:65860   error    Empty block statement                                                              no-empty
+  1:65884   warning  'e' is defined but never used                                                      no-unused-vars
+  1:65886   error    Empty block statement                                                              no-empty
+  1:70727   error    'er' is a function                                                                 no-func-assign
+  1:89603   error    Unnecessary escape character: \.                                                   no-useless-escape
+  1:89608   error    Unnecessary escape character: \/                                                   no-useless-escape
+  1:99178   warning  'n' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  1:100992  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:109159  error    Unexpected constant truthiness on the left-hand side of a `&&` expression          no-constant-binary-expression
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/3a94daa1c77c8122.js
+  1:1567    error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:3264    error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:5031    warning  'n' is defined but never used                                                      no-unused-vars
+  1:5070    warning  'e' is defined but never used                                                      no-unused-vars
+  1:5072    warning  't' is defined but never used                                                      no-unused-vars
+  1:5074    warning  'n' is defined but never used                                                      no-unused-vars
+  1:6441    warning  'e' is defined but never used                                                      no-unused-vars
+  1:10252   warning  'n' is defined but never used                                                      no-unused-vars
+  1:15649   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:19326   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:19373   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:19473   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:19556   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:20378   error    Unexpected combined character in character class                                   no-misleading-character-class
+  1:21616   error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:22342   warning  't' is defined but never used                                                      no-unused-vars
+  1:23775   error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:25890   error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:25920   error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:26045   error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:26114   error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:29077   error    Unexpected control character(s) in regular expression: \x00, \x1f                  no-control-regex
+  1:31100   error    Expected to return a value in method 'get'                                         getter-return
+  1:31209   warning  'e' is defined but never used                                                      no-unused-vars
+  1:31791   error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:32111   error    Invalid typeof comparison value                                                    valid-typeof
+  1:32284   error    Invalid typeof comparison value                                                    valid-typeof
+  1:37922   warning  'e' is defined but never used                                                      no-unused-vars
+  1:39369   error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:58952   error    Empty block statement                                                              no-empty
+  1:61025   error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:67946   warning  'e' is defined but never used                                                      no-unused-vars
+  1:74590   warning  'e' is defined but never used                                                      no-unused-vars
+  1:74592   error    Empty block statement                                                              no-empty
+  1:74601   error    Empty block statement                                                              no-empty
+  1:80028   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:85293   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:86398   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:88073   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:89078   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:94878   warning  'e' is defined but never used                                                      no-unused-vars
+  1:94880   error    Empty block statement                                                              no-empty
+  1:95782   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:98803   error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:103844  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:103936  error    Expected a 'break' statement before 'default'                                      no-fallthrough
+  1:103946  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:104024  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:104502  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:104576  error    Expected a 'break' statement before 'default'                                      no-fallthrough
+  1:104586  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:104654  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:104817  error    Expected a 'break' statement before 'default'                                      no-fallthrough
+  1:104993  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:105024  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:105142  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:105443  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:105474  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:105570  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:105921  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:105952  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:106020  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:106232  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:106266  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:106333  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:106433  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:106464  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:106529  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:112753  error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:113896  error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:114291  error    Expected a 'break' statement before 'default'                                      no-fallthrough
+  1:114449  error    Expected a 'break' statement before 'default'                                      no-fallthrough
+  1:114749  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:115550  warning  'e' is defined but never used                                                      no-unused-vars
+  1:115552  error    Empty block statement                                                              no-empty
+  1:115846  error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:118664  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:119084  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:121701  error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:121858  error    Expected a 'break' statement before 'default'                                      no-fallthrough
+  1:122268  error    Expected a 'break' statement before 'default'                                      no-fallthrough
+  1:132534  error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:133257  warning  'e' is defined but never used                                                      no-unused-vars
+  1:134030  error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:138213  error    Expected a 'break' statement before 'default'                                      no-fallthrough
+  1:149374  warning  'e' is defined but never used                                                      no-unused-vars
+  1:150563  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:152847  warning  'e' is defined but never used                                                      no-unused-vars
+  1:154250  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:155087  warning  'e' is defined but never used                                                      no-unused-vars
+  1:155089  error    Empty block statement                                                              no-empty
+  1:155967  warning  'e' is defined but never used                                                      no-unused-vars
+  1:155969  error    Empty block statement                                                              no-empty
+  1:163287  error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:163474  error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:164669  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:165960  error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:167360  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:168560  error    Unexpected control character(s) in regular expression: \x00                        no-control-regex
+  1:169131  error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:173719  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:174307  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:174646  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:175041  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:175155  error    Expected a 'break' statement before 'default'                                      no-fallthrough
+  1:175317  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:175575  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:176046  error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:176185  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:176361  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:176441  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:179074  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:179134  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:179288  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:179350  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:179646  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:179752  error    Do not access Object.prototype method 'hasOwnProperty' from target object          no-prototype-builtins
+  1:186461  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:190603  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:191717  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:207241  error    '__REACT_DEVTOOLS_GLOBAL_HOOK__' is not defined                                    no-undef
+  1:207502  warning  'e' is defined but never used                                                      no-unused-vars
+  1:207504  error    Empty block statement                                                              no-empty
+  1:208371  warning  'r' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  1:208564  warning  'n' is defined but never used                                                      no-unused-vars
+  1:208670  error    '__REACT_DEVTOOLS_GLOBAL_HOOK__' is not defined                                    no-undef
+  1:208714  error    '__REACT_DEVTOOLS_GLOBAL_HOOK__' is not defined                                    no-undef
+  1:209498  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:213726  warning  't' is defined but never used                                                      no-unused-vars
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/5d9d3141c3412682.js
+  1:3514  warning  'b' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  1:3541  warning  'y' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  1:3569  warning  'j' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  1:3571  warning  'k' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/63e6cef9b22007eb.js
+  1:1411  warning  's' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/652ad0aa26265c47.js
+  1:18751  error    Expected a 'break' statement before 'case'  no-fallthrough
+  1:21257  error    Expected a 'break' statement before 'case'  no-fallthrough
+  1:22099  error    Expected a 'break' statement before 'case'  no-fallthrough
+  1:23890  error    Expected a 'break' statement before 'case'  no-fallthrough
+  1:24213  error    Expected a 'break' statement before 'case'  no-fallthrough
+  1:28003  warning  't' is defined but never used               no-unused-vars
+  1:28737  warning  't' is defined but never used               no-unused-vars
+  1:31233  warning  't' is defined but never used               no-unused-vars
+  1:40684  warning  't' is defined but never used               no-unused-vars
+  1:41456  warning  'e' is defined but never used               no-unused-vars
+  1:43219  warning  'e' is defined but never used               no-unused-vars
+  1:46437  error    Expected a 'break' statement before 'case'  no-fallthrough
+  1:46940  error    Expected a 'break' statement before 'case'  no-fallthrough
+  1:60927  warning  'e' is defined but never used               no-unused-vars
+  1:64041  warning  'r' is defined but never used               no-unused-vars
+  1:64064  warning  'n' is defined but never used               no-unused-vars
+  1:70598  warning  't' is defined but never used               no-unused-vars
+  1:70600  warning  'r' is defined but never used               no-unused-vars
+  1:72984  warning  't' is defined but never used               no-unused-vars
+  2:488    warning  'e' is defined but never used               no-unused-vars
+  2:3425   warning  't' is defined but never used               no-unused-vars
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/a42a7b81c32d8dd7.js
+  1:299   warning  'e' is defined but never used  no-unused-vars
+  1:301   warning  't' is defined but never used  no-unused-vars
+  1:303   warning  'i' is defined but never used  no-unused-vars
+  1:2620  warning  't' is defined but never used  no-unused-vars
+  1:3114  warning  'n' is defined but never used  no-unused-vars
+  1:8577  warning  'i' is defined but never used  no-unused-vars
+  1:8730  error    'o' is already defined         no-redeclare
+  1:8760  error    'l' is already defined         no-redeclare
+  1:8777  error    'd' is already defined         no-redeclare
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/a6dad97d9634a72d.js
+  1:532     warning  't' is defined but never used                                                    no-unused-vars
+  1:705     error    Do not access Object.prototype method 'hasOwnProperty' from target object        no-prototype-builtins
+  1:1283    error    Do not access Object.prototype method 'propertyIsEnumerable' from target object  no-prototype-builtins
+  1:2443    warning  't' is defined but never used                                                    no-unused-vars
+  1:2708    warning  'r' is defined but never used                                                    no-unused-vars
+  1:4295    warning  't' is defined but never used                                                    no-unused-vars
+  1:4297    error    Empty block statement                                                            no-empty
+  1:4998    warning  't' is defined but never used                                                    no-unused-vars
+  1:5000    error    Empty block statement                                                            no-empty
+  1:5728    error    'te.get' is assigned to itself                                                   no-self-assign
+  1:5742    error    'te.has' is assigned to itself                                                   no-self-assign
+  1:5756    error    'te.set' is assigned to itself                                                   no-self-assign
+  1:6989    warning  't' is defined but never used                                                    no-unused-vars
+  1:6991    error    Empty block statement                                                            no-empty
+  1:7338    warning  't' is defined but never used                                                    no-unused-vars
+  1:7340    error    Empty block statement                                                            no-empty
+  1:8971    error    Expected a conditional expression and instead saw an assignment                  no-cond-assign
+  1:9659    error    'ActiveXObject' is not defined                                                   no-undef
+  1:9691    warning  't' is defined but never used                                                    no-unused-vars
+  1:9693    error    Empty block statement                                                            no-empty
+  1:11656   warning  't' is defined but never used                                                    no-unused-vars
+  1:11658   error    Empty block statement                                                            no-empty
+  1:11902   warning  't' is defined but never used                                                    no-unused-vars
+  1:12081   warning  't' is defined but never used                                                    no-unused-vars
+  1:15485   warning  't' is defined but never used                                                    no-unused-vars
+  1:15487   error    Empty block statement                                                            no-empty
+  1:15781   warning  't' is defined but never used                                                    no-unused-vars
+  1:15783   error    Empty block statement                                                            no-empty
+  1:18257   warning  't' is defined but never used                                                    no-unused-vars
+  1:18259   error    Empty block statement                                                            no-empty
+  1:18312   warning  't' is defined but never used                                                    no-unused-vars
+  1:18418   warning  't' is defined but never used                                                    no-unused-vars
+  1:18420   error    Empty block statement                                                            no-empty
+  1:19227   warning  't' is defined but never used                                                    no-unused-vars
+  1:19229   error    Empty block statement                                                            no-empty
+  1:20131   warning  't' is defined but never used                                                    no-unused-vars
+  1:20355   warning  't' is defined but never used                                                    no-unused-vars
+  1:24633   error    Expected a conditional expression and instead saw an assignment                  no-cond-assign
+  1:26576   warning  'e' is defined but never used                                                    no-unused-vars
+  1:26664   warning  'e' is defined but never used                                                    no-unused-vars
+  1:29774   warning  't' is defined but never used                                                    no-unused-vars
+  1:36361   warning  't' is defined but never used                                                    no-unused-vars
+  1:36702   error    Expected a conditional expression and instead saw an assignment                  no-cond-assign
+  1:37311   warning  't' is defined but never used                                                    no-unused-vars
+  1:37667   error    Expected a conditional expression and instead saw an assignment                  no-cond-assign
+  1:37927   warning  't' is defined but never used                                                    no-unused-vars
+  1:45570   warning  't' is defined but never used                                                    no-unused-vars
+  1:45572   error    Empty block statement                                                            no-empty
+  1:47474   warning  'e' is defined but never used                                                    no-unused-vars
+  1:55443   warning  't' is defined but never used                                                    no-unused-vars
+  1:55462   warning  't' is defined but never used                                                    no-unused-vars
+  1:60316   warning  't' is defined but never used                                                    no-unused-vars
+  1:60743   warning  't' is defined but never used                                                    no-unused-vars
+  1:64892   warning  't' is defined but never used                                                    no-unused-vars
+  1:64894   warning  'e' is defined but never used                                                    no-unused-vars
+  1:64896   warning  'r' is defined but never used                                                    no-unused-vars
+  1:66757   warning  't' is defined but never used                                                    no-unused-vars
+  1:67030   warning  't' is defined but never used                                                    no-unused-vars
+  1:67032   error    Empty block statement                                                            no-empty
+  1:67157   warning  't' is defined but never used                                                    no-unused-vars
+  1:67159   error    Empty block statement                                                            no-empty
+  1:67812   warning  'r' is defined but never used                                                    no-unused-vars
+  1:67853   warning  't' is defined but never used                                                    no-unused-vars
+  1:67855   error    Empty block statement                                                            no-empty
+  1:68413   warning  't' is defined but never used                                                    no-unused-vars
+  1:78471   warning  'e' is defined but never used                                                    no-unused-vars
+  1:80351   error    Unexpected control character(s) in regular expression: \x00                      no-control-regex
+  1:80374   error    Unexpected control character(s) in regular expression: \x00, \x00                no-control-regex
+  1:81562   error    Expected a conditional expression and instead saw an assignment                  no-cond-assign
+  1:84352   error    Expected a conditional expression and instead saw an assignment                  no-cond-assign
+  1:84471   error    Expected a conditional expression and instead saw an assignment                  no-cond-assign
+  1:85449   error    Expected a conditional expression and instead saw an assignment                  no-cond-assign
+  1:89035   warning  't' is defined but never used                                                    no-unused-vars
+  1:92492   warning  't' is defined but never used                                                    no-unused-vars
+  1:92699   warning  't' is defined but never used                                                    no-unused-vars
+  1:95466   error    'Bun' is not defined                                                             no-undef
+  1:95509   error    'Deno' is not defined                                                            no-undef
+  1:97212   error    Expected a conditional expression and instead saw an assignment                  no-cond-assign
+  1:98938   error    Expected a conditional expression and instead saw an assignment                  no-cond-assign
+  1:99083   error    Expected a conditional expression and instead saw an assignment                  no-cond-assign
+  1:99400   warning  't' is defined but never used                                                    no-unused-vars
+  1:99402   error    Empty block statement                                                            no-empty
+  1:100325  warning  't' is defined but never used                                                    no-unused-vars
+  1:100994  warning  't' is defined but never used                                                    no-unused-vars
+  1:100996  error    Empty block statement                                                            no-empty
+  1:104103  warning  't' is defined but never used                                                    no-unused-vars
+  1:105650  error    Do not access Object.prototype method 'isPrototypeOf' from target object         no-prototype-builtins
+  1:105707  error    Do not access Object.prototype method 'isPrototypeOf' from target object         no-prototype-builtins
+  1:105775  error    Do not access Object.prototype method 'isPrototypeOf' from target object         no-prototype-builtins
+  1:105854  error    Do not access Object.prototype method 'isPrototypeOf' from target object         no-prototype-builtins
+  1:105984  error    Do not access Object.prototype method 'isPrototypeOf' from target object         no-prototype-builtins
+  1:106339  error    Do not access Object.prototype method 'isPrototypeOf' from target object         no-prototype-builtins
+  1:107767  error    Do not access Object.prototype method 'hasOwnProperty' from target object        no-prototype-builtins
+  1:107910  error    Do not access Object.prototype method 'hasOwnProperty' from target object        no-prototype-builtins
+  1:110184  warning  't' is defined but never used                                                    no-unused-vars
+  1:112164  warning  't' is defined but never used                                                    no-unused-vars
+  1:112205  warning  'e' is defined but never used                                                    no-unused-vars
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/a9647f64cf15869b.js
+  1:3421   warning  'r' is defined but never used                                                      no-unused-vars
+  1:3527   error    '__REACT_DEVTOOLS_GLOBAL_HOOK__' is not defined                                    no-undef
+  1:3571   error    '__REACT_DEVTOOLS_GLOBAL_HOOK__' is not defined                                    no-undef
+  1:5835   error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:8441   error    Expected a 'break' statement before 'case'                                         no-fallthrough
+  1:18644  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:18941  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:20347  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:23590  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:23957  warning  'i' is defined but never used                                                      no-unused-vars
+  1:26773  warning  'r' is defined but never used                                                      no-unused-vars
+  1:26824  warning  'r' is defined but never used                                                      no-unused-vars
+  1:27266  error    Unexpected lexical declaration in case block                                       no-case-declarations
+  1:30617  warning  'r' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  1:35549  error    Expected a conditional expression and instead saw an assignment                    no-cond-assign
+  1:36227  error    Unexpected lexical declaration in case block                                       no-case-declarations
+  1:41718  warning  'i' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/d1bb11febd276292.js
+  1:274    warning  'e' is defined but never used                                                      no-unused-vars
+  1:5544   warning  'e' is defined but never used                                                      no-unused-vars
+  1:5721   warning  'e' is defined but never used                                                      no-unused-vars
+  1:11214  warning  'r' is defined but never used                                                      no-unused-vars
+  1:26021  warning  'e' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  1:26023  warning  'a' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/ff1a16fafef87110.js
+  1:274  warning  'e' is defined but never used  no-unused-vars
+
+/home/arch/Music/huzistyle-main/out/_next/static/chunks/turbopack-6a85deaea7fc77f5.js
+  1:4401  warning  't' is defined but never used               no-unused-vars
+  1:4578  warning  'e' is defined but never used               no-unused-vars
+  3:1202  error    'TURBOPACK_NEXT_CHUNK_URLS' is not defined  no-undef
+  3:1383  warning  'n' is defined but never used               no-unused-vars
+  3:2482  error    'importScripts' is not defined              no-undef
+  3:2496  error    'TURBOPACK_WORKER_LOCATION' is not defined  no-undef
+  3:3566  warning  'n' is defined but never used               no-unused-vars
+
+/home/arch/Music/huzistyle-main/src/app/categories-sitemap.xml/route.js
+  3:10  warning  'categories' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+/home/arch/Music/huzistyle-main/src/app/collections/page.jsx
+  2:10  warning  'products' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+/home/arch/Music/huzistyle-main/src/app/lookbook/page.jsx
+   3:17  warning  'useMemo' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          no-unused-vars
+  29:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  27 |
+  28 |   useEffect(() => {
+> 29 |     setIsClient(true);
+     |     ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  30 |
+  31 |     // Use utility
+  32 |     const shuffle = shuffleArray;  react-hooks/set-state-in-effect
+
+/home/arch/Music/huzistyle-main/src/app/products-showcase/page.jsx
+  37:5  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  35 |       : shuffled;
+  36 |
+> 37 |     setDisplayProducts(finalProducts);
+     |     ^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  38 |
+  39 |     // Restore state from local storage
+  40 |     const savedIndex = localStorage.getItem("huzi_showcase_index");  react-hooks/set-state-in-effect
+  65:6  warning  React Hook useEffect has a missing dependency: 'current'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/exhaustive-deps
+
+/home/arch/Music/huzistyle-main/src/components/AssistiveTouch.jsx
+  11:11  warning  'router' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         no-unused-vars
+  63:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  61 |     useEffect(() => {
+  62 |         // Set initial position on client only
+> 63 |         setPosition({ x: window.innerWidth - 70, y: window.innerHeight - 140 });
+     |         ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  64 |         // Radius matches CSS ring sizes
+  65 |         setRadius(window.innerWidth < 480 ? 120 : window.innerWidth < 768 ? 140 : 170);
+  66 |     }, []);  react-hooks/set-state-in-effect
+  69:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  67 |
+  68 |     useEffect(() => {
+> 69 |         resetIdleTimer();
+     |         ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  70 |         // REMOVED: window.addEventListener('pointerdown', resetIdleTimer);
+  71 |         // REMOVED: window.addEventListener('pointermove', resetIdleTimer);
+  72 |         return () => {                                                                   react-hooks/set-state-in-effect
+  76:77  warning  The ref value 'animationFrame.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'animationFrame.current' to a variable inside the effect, and use that variable in the cleanup function                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    react-hooks/exhaustive-deps
+  78:8   warning  React Hook useEffect has a missing dependency: 'resetIdleTimer'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react-hooks/exhaustive-deps
+  97:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+   95 |
+   96 |     useEffect(() => {
+>  97 |         setIsOpen(false);
+      |         ^^^^^^^^^ Avoid calling setState() directly within an effect
+   98 |     }, [pathname]);
+   99 |
+  100 |     // --- Ball Drag Logic (PointerEvents) ---                                                                                                                                                                             react-hooks/set-state-in-effect
+
+/home/arch/Music/huzistyle-main/src/components/ContactClient.jsx
+  15:15  warning  'encodedText' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+/home/arch/Music/huzistyle-main/src/components/ErrorBoundary.jsx
+  9:37  warning  'error' is defined but never used  no-unused-vars
+
+/home/arch/Music/huzistyle-main/src/components/Footer.jsx
+  9:11  warning  'handleSubscribe' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+/home/arch/Music/huzistyle-main/src/components/HomeClient.jsx
+  58:8   warning  React Hook useEffect has a missing dependency: 'displayProducts.length'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setHasMore' needs the current value of 'displayProducts.length'  react-hooks/exhaustive-deps
+  82:30  warning  'currentEnd' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                       no-unused-vars
+
+/home/arch/Music/huzistyle-main/src/components/Navbar.jsx
+  25:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  23 |
+  24 |     useEffect(() => {
+> 25 |         setMounted(true);
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  26 |         const handleScroll = () => {
+  27 |             setIsScrolled(window.scrollY > 20);
+  28 |         };  react-hooks/set-state-in-effect
+  44:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  42 |
+  43 |     useEffect(() => {
+> 44 |         setIsMobileMenuOpen(false);
+     |         ^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  45 |     }, [pathname]);
+  46 |
+  47 |     const isActive = (path) => pathname === path;         react-hooks/set-state-in-effect
+
+/home/arch/Music/huzistyle-main/src/components/ProductClient.jsx
+  28:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  26 |     useEffect(() => {
+  27 |         const foundProduct = products.find(p => p.slug === slug);
+> 28 |         setProduct(foundProduct);
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  29 |         setSelectedImage(0);
+  30 |         // window.scrollTo(0, 0); // Next.js handles this
+  31 |     }, [slug]);  react-hooks/set-state-in-effect
+  38:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  36 |         } else {
+  37 |             document.body.style.overflow = 'unset';
+> 38 |             setLightboxZoom(1);
+     |             ^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  39 |         }
+  40 |         return () => {
+  41 |             document.body.style.overflow = 'unset';                                react-hooks/set-state-in-effect
+  83:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  81 |         };
+  82 |
+> 83 |         setRelatedProducts(getRelatedProducts());
+     |         ^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  84 |     }, [product]);
+  85 |
+  86 |     if (!product) {                                                                                                                       react-hooks/set-state-in-effect
+
+/home/arch/Music/huzistyle-main/src/components/Search.jsx
+  19:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  17 |     useEffect(() => {
+  18 |         // Run on client only
+> 19 |         setIsMobile(window.innerWidth < 768);
+     |         ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  20 |         const handleResize = () => {
+  21 |             setIsMobile(window.innerWidth < 768);
+  22 |         };  react-hooks/set-state-in-effect
+  36:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  34 |         // Don't generate preview results on mobile to keep UI clean as requested
+  35 |         if (isMobile) {
+> 36 |             setResults([]);
+     |             ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  37 |             return;
+  38 |         }
+  39 |                               react-hooks/set-state-in-effect
+
+/home/arch/Music/huzistyle-main/src/components/SearchClient.jsx
+  18:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  16 |     useEffect(() => {
+  17 |         if (q) {
+> 18 |             setQuery(q);
+     |             ^^^^^^^^ Avoid calling setState() directly within an effect
+  19 |         }
+  20 |     }, [q]);
+  21 |                                                                                   react-hooks/set-state-in-effect
+  85:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  83 |     // Reset visible count when query changes
+  84 |     useEffect(() => {
+> 85 |         setVisibleCount(BATCH_SIZE);
+     |         ^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  86 |     }, [query]);
+  87 |
+  88 |     const visibleResults = useMemo(() => {  react-hooks/set-state-in-effect
+
+/home/arch/Music/huzistyle-main/src/components/ShopClient.jsx
+    3:55  warning  'useLayoutEffect' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       no-unused-vars
+    5:34  warning  'useSearchParams' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       no-unused-vars
+    6:20  warning  'gamingSubCategories' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   no-unused-vars
+    6:41  warning  'productTypes' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          no-unused-vars
+    6:69  warning  'staticCategories' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      no-unused-vars
+   17:11  warning  'router' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       no-unused-vars
+   18:11  warning  'pathname' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     no-unused-vars
+   23:12  warning  'activeSubCategory' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            no-unused-vars
+   24:12  warning  'productTypeFilter' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            no-unused-vars
+   25:12  warning  'isMobileFilterOpen' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           no-unused-vars
+   25:32  warning  'setIsMobileFilterOpen' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        no-unused-vars
+   31:12  warning  'visibleCount' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 no-unused-vars
+   31:26  warning  'setVisibleCount' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              no-unused-vars
+   35:11  warning  'loadingRef' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   no-unused-vars
+   41:11  warning  'categories' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   no-unused-vars
+   84:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  82 |         // We now render immediately for visibility
+  83 |         if (displayProducts.length > 0 && displayProducts[0]?.id === filteredProducts[0]?.id) {
+> 84 |             setHasMore(filteredProducts.length > displayProducts.length);
+     |             ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  85 |             return;
+  86 |         }
+  87 |    react-hooks/set-state-in-effect
+   92:8   warning  React Hook useEffect has a missing dependency: 'displayProducts'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           react-hooks/exhaustive-deps
+  148:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  146 |             else targetCategory = categoryParam.charAt(0).toUpperCase() + categoryParam.slice(1);
+  147 |
+> 148 |             setActiveCategory(targetCategory);
+      |             ^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  149 |             setActiveSubCategory(null);
+  150 |         } else {
+  151 |             setActiveCategory('All');  react-hooks/set-state-in-effect
+
+/home/arch/Music/huzistyle-main/src/context/CartContext.jsx
+  17:17  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  15 |         if (savedCart) {
+  16 |             try {
+> 17 |                 setCart(JSON.parse(savedCart));
+     |                 ^^^^^^^ Avoid calling setState() directly within an effect
+  18 |             } catch (e) {
+  19 |                 console.error("Failed to parse cart from local storage", e);
+  20 |             }  react-hooks/set-state-in-effect
+
+/home/arch/Music/huzistyle-main/src/context/CompareContext.jsx
+  15:17  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  13 |         if (saved) {
+  14 |             try {
+> 15 |                 setCompareList(JSON.parse(saved));
+     |                 ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  16 |             } catch (e) {
+  17 |                 console.error("Failed to parse compare list", e);
+  18 |             }  react-hooks/set-state-in-effect
+
+✖ 386 problems (222 errors, 164 warnings)
+

@@ -1,0 +1,42 @@
+.account-page {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.account-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+}
+
+.account-section h2 {
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.empty-state {
+    padding: 40px 0;
+    color: var(--color-text-light);
+}
+
+.address-card {
+    line-height: 1.6;
+}
+
+.address-card .name {
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .account-grid {
+        grid-template-columns: 1fr;
+    }
+}

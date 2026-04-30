@@ -1,0 +1,3 @@
+# Cloudflare Pages - Static Export Redirects
+# All routes are pre-generated, but this catches any edge cases
+/index.html / 301
