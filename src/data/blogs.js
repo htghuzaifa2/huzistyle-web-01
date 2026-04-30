@@ -1,7 +1,70 @@
 // Blog posts data for Huzi Style
 // Each blog post has a slug (URL), title, excerpt, content, category, date, cover image, and read time
 
+import { productBlogs } from './productBlogs.js';
+
+// Collection overview blog for Ghost of Yotei
+const collectionOverviewBlog = {
+  id: 50,
+  slug: "ghost-of-yotei-complete-collection-guide",
+  title: "Ghost of Yotei: The Complete Hoodie Collection by Huzi Style",
+  excerpt: "Explore the full Ghost of Yotei hoodie collection — 34 premium designs across Classic, Kawaii, Sakai Clan, and Anime editions. Shop exclusive streetwear from Pakistan with worldwide shipping.",
+  category: "Collection Spotlight",
+  date: "2025-05-01",
+  readTime: "10 min read",
+  coverImage: "https://i.postimg.cc/prXDrB2s/premium-grey-hoodie-atsu-wolf.webp",
+  author: "Huzi Style Team",
+  tags: ["Ghost of Yotei", "Collection", "Hoodie", "Streetwear", "Pakistan", "Gaming Merch"],
+  content: [
+    {
+      type: "paragraph",
+      text: "The Ghost of Yotei collection by Huzi Style represents the pinnacle of gaming-inspired streetwear, bringing the rich world of feudal Japan's Ezo frontier to life through premium apparel. With 34 meticulously designed hoodies spanning four distinct editions — Classic, Kawaii, Atsu Sakai Clan, and Anime — this collection offers something for every fan of the Ghost of Yotei universe. Each hoodie is crafted from premium cotton blends, features high-definition artwork, and ships internationally to over 100 countries, making these pieces accessible to collectors and streetwear enthusiasts worldwide."
+    },
+    {
+      type: "heading",
+      text: "The Classic Edition: Where It All Began"
+    },
+    {
+      type: "paragraph",
+      text: "The Classic Edition features eight foundational designs that capture the essence of the Ghost of Yotei experience. From the signature Gray Hoodie with its detailed Atsu, Wolf, and Mount Yotei artwork to the bold Red Hoodie symbolizing the warrior's passion, each piece tells a story. The Pink edition highlights Atsu against Mount Yotei with a softer, more artistic touch, while the Forest Green channels the untamed wilderness of 1600s Ezo. The Dark Gray offers minimalist elegance, the Brown evokes earthy Japanese landscapes, and the clean White and Gray provide versatile everyday options. All Classic Edition hoodies feature premium cotton construction with brushed fleece interiors, ribbed cuffs, reinforced hems, and relaxed fits designed for year-round comfort."
+    },
+    {
+      type: "heading",
+      text: "The Kawaii Edition: Playful Meets Powerful"
+    },
+    {
+      type: "paragraph",
+      text: "The Kawaii Edition reimagines the Ghost of Yotei universe through the lens of Japanese kawaii culture, blending traditional samurai aesthetics with playful, expressive artistry. Available in 11 colors — Blue, Black, Grey, Green, Beige, White, Pink, Brown, Red, Yellow, and a special Grey variant — these hoodies feature Atsu in endearing, high-definition kawaii illustrations accented by Japanese calligraphy and symbolic motifs. Crafted from 85% organic cotton and 15% recycled polyester with eco-friendly ink printing, the Kawaii Edition represents our commitment to sustainability without compromising on style. The brushed organic cotton exterior and fleece-lined interior provide exceptional comfort, while the relaxed Japanese streetwear silhouette makes each piece a statement of both creativity and conscience."
+    },
+    {
+      type: "heading",
+      text: "The Atsu Sakai Clan Edition: Heritage and Honor"
+    },
+    {
+      type: "paragraph",
+      text: "The Atsu Sakai Clan Edition is the most expansive in the collection, offering 11 hoodie designs that honor the legendary warrior lineage of Atsu. Available in Blue, Black, Yellow, Grey, Beige, Green, Pink, Brown, Red, White, and a special Grey variant, each hoodie in this edition features clan-inspired artwork that connects the wearer to the storied history of the Ghost of Yotei universe. These pieces feature heavyweight cotton-polyester blends, double-lined hoods with adjustable drawstrings, front kangaroo pouch pockets, and high-definition printing technology that ensures every detail remains crisp through countless washes. The Sakai Clan Edition hoodies are perfect for autumn and winter, offering both warmth and a powerful visual statement."
+    },
+    {
+      type: "heading",
+      text: "The Anime Edition: Art in Motion"
+    },
+    {
+      type: "paragraph",
+      text: "The Anime Edition captures the dynamic, action-filled spirit of the Ghost of Yotei world through vivid anime-style artwork. Available in Green, Beige, Pink, and Grey, these four hoodies feature high-energy illustrations that bring the game's most iconic moments to life on premium fabric. Each Anime Edition hoodie uses the same quality construction as the rest of the collection — premium cotton blends, DTG or screen printing for lasting detail, and a comfortable unisex fit. These pieces are particularly popular among gamers and anime enthusiasts who want to express their fandom through elevated streetwear rather than typical merchandise."
+    },
+    {
+      type: "heading",
+      text: "Quality, Customization, and Global Access"
+    },
+    {
+      type: "paragraph",
+      text: "What sets the Ghost of Yotei collection apart from standard gaming merchandise is the uncompromising quality at its core. Every hoodie in the collection is priced at an accessible $44 USD, features custom sizing options for the perfect fit, and ships internationally to over 100 countries from our Pakistan-based atelier. The use of premium cotton blends, eco-friendly inks, and fade-resistant printing technology ensures that each hoodie maintains its visual impact and structural integrity over time. Whether you're a dedicated Ghost of Yotei collector, a streetwear enthusiast, or someone discovering premium Pakistani fashion for the first time, the Ghost of Yotei hoodie collection by Huzi Style offers an authentic, high-quality way to wear your passion."
+    }
+  ]
+};
+
 export const blogs = [
+  collectionOverviewBlog,
   {
     id: 1,
     slug: "streetwear-essentials-guide-2025",
@@ -293,7 +356,8 @@ export const blogs = [
         text: "One of the most exciting developments in 2025 is the fusion of diverse cultural elements within streetwear design. Traditional embroidery techniques, indigenous textile patterns, and heritage craftsmanship are being incorporated into contemporary streetwear silhouettes, creating garments that tell stories across cultures. At Huzi Style, we're proud to contribute to this movement by incorporating Pakistani artisanal techniques into our collections, bridging the gap between traditional craftsmanship and modern streetwear aesthetics."
       }
     ]
-  }
+  },
+  ...productBlogs
 ];
 
 // Helper function to get a blog by slug

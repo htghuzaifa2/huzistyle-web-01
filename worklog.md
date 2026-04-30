@@ -64,3 +64,27 @@ Stage Summary:
 - Blog accessible from Navbar, Footer sidebar, and direct URL
 - Each blog post has: cover image, category badge, date, read time, author, full content with headings, tags, related posts section
 - Responsive design: adapts from 3-column grid to single column on mobile
+
+---
+Task ID: 4
+Agent: Main
+Task: Add search bar + write 35 SEO product blogs for Ghost of Yotei collection
+
+Work Log:
+- Added real-time search bar to blog listing page with search icon, input field, and clear button
+- Searches across title, excerpt, tags, and category in real-time using useMemo
+- Added search bar CSS styles (focus effects, clear button, result count, empty state)
+- Wrote 1 collection overview blog ("Ghost of Yotei: The Complete Hoodie Collection") covering all 4 editions
+- Generated 34 individual SEO product spotlight blogs via subagent, one per hoodie
+- Each product blog uses the actual product image, unique SEO title, excerpt with keywords, and 4-6 content blocks
+- Product blog categories: "Collection Spotlight" (1) and "Product Spotlight" (34)
+- Merged product blogs into main blogs.js via import from productBlogs.js
+- Total blog count: 41 (7 original + 1 collection overview + 34 product spotlights)
+- Build verified: 41 blog routes pre-generated, 0 errors
+
+Stage Summary:
+- Real-time search filters blogs by title, excerpt, tags, and category
+- 1 Ghost of Yotei collection overview blog covering Classic, Kawaii, Sakai Clan, and Anime editions
+- 34 individual product blogs, each with unique SEO content, product images, and CTA
+- Search bar with focus effects, clear button, result counter, and styled empty state
+- 8 category tabs: All, Collection Spotlight, Product Spotlight, Style Guide, Styling Tips, Industry, Guide, Behind the Scenes, Trends

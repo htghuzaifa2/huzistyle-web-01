@@ -1,18 +1,33 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { ArrowRight, ArrowLeft, Clock, Calendar } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Clock, Calendar, Search, X } from 'lucide-react';
 import { blogs, getBlogCategories } from '../../data/blogs';
 import '../../styles/Blog.css';
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
   const categories = ['All', ...getBlogCategories()];
 
-  const filteredBlogs = activeCategory === 'All'
-    ? blogs
-    : blogs.filter(blog => blog.category === activeCategory);
+  const filteredBlogs = useMemo(() => {
+    let results = activeCategory === 'All'
+      ? blogs
+      : blogs.filter(blog => blog.category === activeCategory);
+
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase().trim();
+      results = results.filter(blog =>
+        blog.title.toLowerCase().includes(q) ||
+        blog.excerpt.toLowerCase().includes(q) ||
+        blog.tags?.some(tag => tag.toLowerCase().includes(q)) ||
+        blog.category.toLowerCase().includes(q)
+      );
+    }
+
+    return results;
+  }, [activeCategory, searchQuery]);
 
   const featuredBlog = filteredBlogs[0];
   const remainingBlogs = filteredBlogs.slice(1);
@@ -20,6 +35,10 @@ export default function BlogPage() {
   const formatDate = (dateStr) => {
     const date = new Date(dateStr);
     return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  };
+
+  const handleClearSearch = () => {
+    setSearchQuery('');
   };
 
   return (
@@ -31,18 +50,43 @@ export default function BlogPage() {
         </p>
       </div>
 
+      {/* Search Bar */}
+      <div className="blog-search-bar">
+        <Search size={18} className="blog-search-icon" />
+        <input
+          type="text"
+          className="blog-search-input"
+          placeholder="Search articles..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+        {searchQuery && (
+          <button className="blog-search-clear" onClick={handleClearSearch} aria-label="Clear search">
+            <X size={16} />
+          </button>
+        )}
+      </div>
+
       {/* Category Filter */}
       <div className="blog-categories">
         {categories.map(category => (
           <button
             key={category}
             className={`blog-category-btn ${activeCategory === category ? 'active' : ''}`}
-            onClick={() => setActiveCategory(category)}
+            onClick={() => { setActiveCategory(category); setSearchQuery(''); }}
           >
             {category}
           </button>
         ))}
       </div>
+
+      {/* Result count */}
+      {(searchQuery || activeCategory !== 'All') && (
+        <p className="blog-results-count">
+          {filteredBlogs.length} article{filteredBlogs.length !== 1 ? 's' : ''} found
+          {searchQuery && <> for &ldquo;{searchQuery}&rdquo;</>}
+        </p>
+      )}
 
       {/* Blog Grid */}
       <div className="blog-grid">
@@ -117,15 +161,12 @@ export default function BlogPage() {
       </div>
 
       {filteredBlogs.length === 0 && (
-        <div style={{
-          textAlign: 'center',
-          padding: '80px 20px',
-          color: 'var(--color-text-light)',
-        }}>
-          <p style={{ fontSize: '1.1rem', marginBottom: '16px' }}>No articles found in this category.</p>
+        <div className="blog-empty-state">
+          <Search size={40} strokeWidth={1} />
+          <p>No articles found{searchQuery && <> for &ldquo;{searchQuery}&rdquo;</>}.</p>
           <button
             className="btn btn-outline"
-            onClick={() => setActiveCategory('All')}
+            onClick={() => { setActiveCategory('All'); setSearchQuery(''); }}
           >
             View All Articles
           </button>
