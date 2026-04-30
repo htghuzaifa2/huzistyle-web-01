@@ -103,7 +103,7 @@ function BlogPageContent() {
       <div className="blog-header">
         <h1 className="blog-title">The Journal</h1>
         <p className="blog-description">
-          Style insights, behind-the-scenes stories, and guides from the world of Huzi Style.
+          Product spotlights, tech news, life-changing tips, and style guides — curated to keep you ahead of the game.
         </p>
       </div>
 
