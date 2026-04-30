@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Instagram, Twitter, Mail, ArrowRight } from 'lucide-react';

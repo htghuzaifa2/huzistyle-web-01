@@ -52,7 +52,7 @@ const CartDrawer = ({ isOpen, onClose }) => {
 
                                     {(item.color || item.size) && (
                                         <p className="variant-text">
-                                            {item.color}{item.color && item.size ? ' / ' : ''}{item.size}
+                                            {[item.color, item.size].filter(Boolean).join(' / ')}
                                         </p>
                                     )}
 

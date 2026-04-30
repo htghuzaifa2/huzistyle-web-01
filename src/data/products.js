@@ -57,7 +57,7 @@ export const products = rawProducts.map(p => {
         productType: productType,
         image: p.images[0]?.url || '',
         images: p.images.map(img => img.url),
-        description: p.shortDescription || p.description?.substring(0, 150) + '...',
+        description: p.shortDescription || (p.description ? p.description.substring(0, 150) + '...' : 'Premium streetwear by Huzi Style.'),
         longDescription: p.description,
         specifications: p.specs,
         stock: p.stock || 50,

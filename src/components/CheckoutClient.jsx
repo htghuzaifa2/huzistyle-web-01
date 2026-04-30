@@ -306,7 +306,7 @@ const CheckoutClient = () => {
                                         <img src={item.image} alt={item.name} className="summary-item-image" />
                                         <div className="summary-item-info">
                                             <span className="summary-item-name">{item.name}</span>
-                                            <span className="summary-item-variant">{item.color} / {item.size} x {item.quantity}</span>
+                                            <span className="summary-item-variant">{[item.color, item.size].filter(Boolean).join(' / ')} x {item.quantity}</span>
                                         </div>
                                     </div>
                                     <span className="summary-item-price">$ {item.price * item.quantity}</span>

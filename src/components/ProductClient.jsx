@@ -167,7 +167,7 @@ const ProductClient = ({ slug }) => {
         return `${product.title || product.name} - Luxury Detail View ${idx + 1} | Huzi Style Elite Collection`;
     };
 
-    const currentImageSrc = product.images && product.images[selectedImage]
+    const currentImageSrc = product.images && product.images.length > 0 && product.images[selectedImage]
         ? getImageUrl(product.images[selectedImage])
         : product.image;
 

@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ShoppingBag, Search, Menu, X, Sun, Moon, Monitor, Zap, Home, Heart, ShoppingCart, Grid, Globe } from 'lucide-react';
+import { ShoppingBag, Search, Menu, X, Sun, Moon, Monitor, Zap, Home, Heart, ShoppingCart, Grid, Globe, MessageCircle } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useTheme } from '../context/ThemeContext';
 import SearchModal from './Search';
@@ -137,7 +137,7 @@ const Navbar = () => {
                             <Heart size={20} /> About
                         </Link>
                         <Link href="/contact" className={isActive('/contact') ? 'active' : ''}>
-                            <Search size={20} /> Contact
+                            <MessageCircle size={20} /> Contact
                         </Link>
                         <div className="sidebar-divider"></div>
                         <Link href="/faq">FAQ</Link>

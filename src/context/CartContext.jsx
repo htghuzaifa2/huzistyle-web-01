@@ -1,3 +1,5 @@
+'use client';
+
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const CartContext = createContext();
@@ -29,10 +31,10 @@ export const CartProvider = ({ children }) => {
         }
     }, [cart, isLoaded]);
 
-    const addToCart = (product, quantity, color, size) => {
+    const addToCart = (product, quantity, color = '', size = '') => {
         setCart(prevCart => {
             const existingItemIndex = prevCart.findIndex(item =>
-                item.id === product.id && item.color === color && item.size === size
+                item.id === product.id && (item.color || '') === color && (item.size || '') === size
             );
 
             if (existingItemIndex > -1) {
@@ -47,13 +49,13 @@ export const CartProvider = ({ children }) => {
     };
 
     const removeFromCart = (itemId, color, size) => {
-        setCart(prevCart => prevCart.filter(item => !(item.id === itemId && item.color === color && item.size === size)));
+        setCart(prevCart => prevCart.filter(item => !(item.id === itemId && (item.color || '') === (color || '') && (item.size || '') === (size || ''))));
     };
 
     const updateQuantity = (itemId, color, size, newQuantity) => {
         if (newQuantity < 1) return;
         setCart(prevCart => prevCart.map(item =>
-            (item.id === itemId && item.color === color && item.size === size)
+            (item.id === itemId && (item.color || '') === (color || '') && (item.size || '') === (size || ''))
                 ? { ...item, quantity: newQuantity }
                 : item
         ));
