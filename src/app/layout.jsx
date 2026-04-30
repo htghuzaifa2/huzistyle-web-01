@@ -93,6 +93,11 @@ export default function RootLayout({ children }) {
                 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
                 <meta name="mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-capable" content="yes" />
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `(function(){try{var t=localStorage.getItem('huzi-theme');if(t==='system'){t=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'}if(!t)t='light';document.documentElement.setAttribute('data-theme',t)}catch(e){}})()`,
+                    }}
+                />
             </head>
             <body suppressHydrationWarning={true}>
                 <PrefetchLoader />
