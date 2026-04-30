@@ -46,10 +46,13 @@ export const products = rawProducts.map(p => {
     );
     if (typeMatch) productType = typeMatch;
 
-    // 3. Determine secondary categories (Unisex products appear in Men + Women)
+    // 3. Determine secondary categories (Unisex / Gaming products appear in Men + Women + Kids)
     let secondaryCategories = [];
     if (category === 'Gaming Outfits' || p.categories.some(c => normalize(c) === 'unisex')) {
-        secondaryCategories = ['Men', 'Women'];
+        secondaryCategories = ['Men', 'Women', 'Kids'];
+    } else if (category !== 'Kids') {
+        // Non-gaming products also available in Kids via custom sizing
+        secondaryCategories = ['Kids'];
     }
 
     // 4. Map Fields
